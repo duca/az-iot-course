@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FileUploadSample": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "IOTHUB_DEVICE_CONN_STRING": "HostName=elopes-iot.azure-devices.net;DeviceId=iotdev1;SharedAccessKey=OEAHX43oQfyqFO/mGbQ794XNB2/HF84lwWAPmYwFqwQ="
+      }
+    }
+  }
+}

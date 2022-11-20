@@ -1,0 +1,11 @@
+static async void HandleDesiredPropertiesChange()
+{
+	await s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(async (desired, ctx) =>
+	{
+		Newtonsoft.Json.Linq.JValue fpsJson = desired["FPS"];
+		var fps = fpsJson.Value;
+
+		Console.WriteLine("Received desired FPS: {0}", fps);
+
+	}, null);
+}
